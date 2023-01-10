@@ -11,10 +11,12 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 #### Structure:
 mysite - Backend django rest framework api.
-
+sm-web - Frontend react UI/UX side
 
 #### Backend:
-1.  Mysite - Default django app.
+Mysite - Default django app.
+
+#### Frontend:
 
 
 #### Install:
