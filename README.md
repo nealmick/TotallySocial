@@ -20,7 +20,12 @@ sm-web - Frontend react UI/UX side
 3.  Profiles - Account images, Followers, Status, etc...
 4.  SM - Main django app for posts, feed, and messages, with searilizers, models, and views.
 
-#### Frontend:
+#### Frontend React Components:
+
+1.  Profiles - Profile badge, follower button, message button, and other account related UI.
+2.  Posts - Post content, like button, images, comments, feed, and other components.
+3.  Lookup - Handles interaction with api, GET and POST requests....
+
 
 # Live: https://totally.social
 
