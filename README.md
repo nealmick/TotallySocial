@@ -1,6 +1,5 @@
 # Totally.Social
 #### This platform is meant to be used to share ideas and build connections.
-#### https://totally.social
 
 The frontend is built with React, Bootstrap and a bit of CSS.  The backend server is a Django Rest Framework API.
 
@@ -8,3 +7,4 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 
 
+#### https://totally.social
