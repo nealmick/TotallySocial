@@ -14,15 +14,12 @@ mysite - Backend django rest framework api.
 
 sm-web - Frontend react UI/UX side
 
-#### Backend:
+#### Backend Django apps:
 
-Mysite - Default django app.
-
-Accounts - Authorization, Authentication, and identity.
-
-Profiles - Account images, Followers, Status, etc...
-
-SM - Main django app for posts, feed, and messages, with searilizers, models, and views.
+1.  Mysite - Default django app.
+2.  Accounts - Authorization, Authentication, and identity.
+3.  Profiles - Account images, Followers, Status, etc...
+4.  SM - Main django app for posts, feed, and messages, with searilizers, models, and views.
 
 #### Frontend:
 
