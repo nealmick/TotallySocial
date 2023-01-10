@@ -9,12 +9,16 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 # Live: https://totally.social
 
-#### Structure:
-1. mysite - Backend django rest framework api.
-2. sm-web - Frontend react UI/UX side
+#### File Structure:
+mysite - Backend django rest framework api.
+
+sm-web - Frontend react UI/UX side
 
 #### Backend:
 Mysite - Default django app.
+Accounts - Authorization, Authentication, and identity.
+Profiles - Account images, Followers, Status, etc...
+SM - Main django app for posts, feed, and messages, with searilizers, models, and views.
 
 #### Frontend:
 
