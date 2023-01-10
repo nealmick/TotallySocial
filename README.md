@@ -17,8 +17,8 @@ The main content item is a post.  Each post can be up to 240 characters and may 
           4.  SM - Main django app for posts, feed, and messages.
 
     sm-web - Frontend react UI/UX components:
-          1.  Profiles - Profile badge, follower button, message button, and other account related UI.
-          2.  Posts - Post content, like button, images, comments, feed, and other components.
+          1.  Profiles - Profile badge, follower button, message button...
+          2.  Posts - Post content, like button, images, comments, feed...
           3.  Lookup - Handles interaction with api, GET and POST requests....
 
 
