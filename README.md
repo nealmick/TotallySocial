@@ -8,3 +8,23 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 
 #### https://totally.social
+
+#### Install:
+
+```bash
+git clone https://github.com/nealmick/TotallySocial
+
+pip install -r requirements.txt
+
+python3 manage.py runserver
+
+npm install
+
+npm run build
+
+npm start
+
+```
+
+<img src="https://i.imgur.com/3ven2Y1.png" width="600" height="500" />
+
