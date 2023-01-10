@@ -7,7 +7,7 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 
 
-#### https://totally.social
+# Live: https://totally.social
 
 #### Install:
 
