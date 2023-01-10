@@ -11,15 +11,15 @@ The main content item is a post.  Each post can be up to 240 characters and may 
     Project Structure:
     
     mysite - Backend django rest framework api:
-          1.  Mysite - Default django app.
-          2.  Accounts - Authorization, Authentication, and identity.
-          3.  Profiles - Account images, Followers, Status, etc...
-          4.  SM - Main django app for posts, feed, and messages.
+          1.  Mysite - Default django app
+          2.  Accounts - Authorization, Authentication, and identity
+          3.  Profiles - Account images, Followers, Status, etc
+          4.  SM - Main django app for posts, feed, and messages
 
     sm-web - Frontend react UI/UX components:
-          1.  Profiles - Profile badge, follower button, message button...
-          2.  Posts - Post content, like button, images, comments, feed...
-          3.  Lookup - Handles interaction with api, GET and POST requests....
+          1.  Profiles - Profile badge, follower button, message button
+          2.  Posts - Post content, like button, images, comments, feed
+          3.  Lookup - Handles interaction with api, GET and POST requests
 
 
 
