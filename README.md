@@ -14,8 +14,8 @@ The main content item is a post.  Each post can be up to 240 characters and may 
           1.  Mysite - Default django app.
           2.  Accounts - Authorization, Authentication, and identity.
           3.  Profiles - Account images, Followers, Status, etc...
-          4.  SM - Main django app for posts, feed, and messages, with searilizers, models, and views.
-         
+          4.  SM - Main django app for posts, feed, and messages.
+
     sm-web - Frontend react UI/UX components:
           1.  Profiles - Profile badge, follower button, message button, and other account related UI.
           2.  Posts - Post content, like button, images, comments, feed, and other components.
