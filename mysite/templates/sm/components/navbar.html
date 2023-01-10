@@ -1,0 +1,99 @@
+
+{% if request.user.is_authenticated %}
+    <div id="navbar"class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="padding-right: 0px;">
+        <div id="navbarw"class=""style="max-width:310px;position:fixed;margin-top:100px">
+            <div class="row" onclick="location.href='/profile/{{user.username}}';">
+            <div class="col-3" style="min-width:80px">
+                <img class="rounded-circle account-img d-block" style="display:inline;width:75px;height: 50px;"src="{{ user.profile.image.url }}">
+
+            </div>
+            <div class="col-8">
+                <h2 style="margin-top: 4px;">@{{user.username}}</h2> 
+ 
+            </div>
+            </div>
+            <br>
+            <div style="min-width:110px;max-width:295px;white-space: nowrap;overflow: hidden;">
+
+
+
+            <input class="nav-link" id="id_search" placeholder="Search" maxlength="20" style="padding:5px;width:100%;height:38px;overflow: hidden;resize: none;margin-bottom: 5px;"></input>
+            <button class="btn btn-outline-primary" onclick="searchTickets()" style="border:none;height:38px; width:40px;float:right;position:relative;bottom: 43px;"><i class="fas fa-search"></i></button>
+
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="/" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-list-ul"></i> Feed </a>
+            <a class="nav-link" id="v-pills-explore-tab" data-toggle="pill" href="/explore/" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-hashtag"></i> Explore </a>
+            <a class="nav-link" id="v-pills-message-tab" data-toggle="pill" href="/conversations/" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="far fa-envelope"></i> Message </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="/profile/edit/" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="far fa-user"></i> Profile </a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="/profile/logout/" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-sign-in-alt"></i> Logout </a>
+            </div>
+            <div id="trending" style="margin-top: 50px;margin-right: 5px;">
+                    <hr>
+                <h2 style="margin-top: 45px;">Trending</h2>
+
+                <p style="margin-top: 15px; color:#212429 !important">
+                    <a style="color:#212429" href="/search/Django">#Django</a>
+                    <a style="color:#212429" href="/search/React">#React</a>
+                    <a style="color:#212429" href="/search/Python">#Python</a>
+                    <a style="color:#212429" href="/search/Tensorflow">#Tensorflow</a>
+                    <a style="color:#212429" href="/search/PyTorch">#PyTorch</a>
+                    <a style="color:#212429" href="/search/NBA">#NBA</a>
+                    <a style="color:#212429" href="/search/JavaScript">#JavaScript</a>
+                    <a style="color:#212429" href="/search/CSS">#CSS</a>
+                    <a style="color:#212429" href="/search/HTML">#HTML</a>
+                    <a style="color:#212429" href="/search/Figma">#Figma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+<style>
+    #trending a{
+        text-decoration : none
+    }
+    #trending a:hover{
+        text-decoration : underline
+    }
+</style>
+
+<script>
+    var searchListener = document.getElementById("id_search");
+    searchListener.addEventListener("keydown", function (e) {
+        if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+            searchTickets();
+        }
+    });
+
+    function searchTickets(){
+    let input = document.getElementById('id_search').value
+    console.log(input)
+
+    window.location.replace("http://localhost:8000/search/"+input);
+    }
+
+
+
+
+
+
+
+    if (window.location.href.indexOf("profile/edit/") > -1) {
+        document.getElementById("v-pills-profile-tab").className +=" active"
+    }else if (window.location.href.indexOf("conversations" ) > -1) {
+        document.getElementById("v-pills-message-tab").className +=" active"
+    }else if (window.location.href.indexOf("conversation" ) > -1) {
+        document.getElementById("v-pills-message-tab").className +=" active"
+    }else if (window.location.href.indexOf("explore" ) > -1) {
+        document.getElementById("v-pills-explore-tab").className +=" active"
+    }else{
+        document.getElementById("v-pills-home-tab").className +=" active"
+    }
+
+</script>
+<style>
+
+</style>
+{% endif %}

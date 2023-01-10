@@ -1,0 +1,52 @@
+{% extends 'sm/base.html'%}
+
+{% block content%}
+
+
+<div id="content"class="offset-lg-3 col-lg-6" style="min-height:70vh;margin-top:100px;padding-left: 25px!important;padding-right: 25px!important;">
+<div class="chirp-profile-badge" data-username="{{ username }}" ></div>
+<br>
+<h2 style="margin-left:5px">Posts:</h2>
+<div id="chirp" data-username="{{ username }}" data-can-post="false"></div>
+</div>
+
+
+
+
+<style>
+
+    @media(min-width:991px){
+        #content{
+            
+            border-left: 1px solid #CED4DA !important;
+            border-right: 1px solid #CED4DA !important;
+        }
+        #profile_info{
+            margin: auto !important;
+
+        }
+    }
+    @media(max-width:991px){
+        #content{
+            
+            margin-top: 10px !important;
+            margin-bottom: 100px !important;
+            padding: 0px !important;
+            border-left: 0px solid #CED4DA;
+            border-right: 0px solid #CED4DA;
+    
+        }
+        #profile_info{
+            margin-top: 20px !important;
+
+        }
+
+
+    }
+
+    #profile_pic{
+        margin: auto !important;
+
+    }
+</style>
+{% endblock content%}

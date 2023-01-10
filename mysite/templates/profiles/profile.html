@@ -1,0 +1,88 @@
+
+
+
+{% extends 'sm/base.html'%}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+{% if request.user.is_authenticated %}
+
+
+<div id="content"class="offset-lg-3 col-lg-6" style="min-height:75vh;margin-top:100px;padding-left: 25px;padding-right: 25px;">
+
+
+
+  <div class="foobar" style="padding: 0px !important;">
+    <div class="row">
+      <div class="col-3"style="min-width:200px">
+              
+          <img class="rounded-circle account-img d-block" style="position:relative;margin-left:auto;margin-right:auto;width:150px;height: 100px;margin-top: 25px;"src="{{ profile.image.url }}">
+      </div>
+      <div class="col-6" style="margin-top:5px">
+          <h2 class="account-heading"style="margin-bottom: .1rem;">{{ user.first_name }} {{ user.last_name }}</h2>
+          <p class=""style="margin-bottom: .1rem;"><span >@{{user.username}}</span></p>
+          <p class=""style="margin-bottom: .1rem;"><span >Followers: {{profile.followers.count}}</span></p>
+          <p class=""style="margin-bottom: .1rem;"><span >Following: {{user.following.count}}</span></p>
+          <p class=""style="margin-bottom: .1rem;"><span style="">Joined: {{ user.date_joined }}</span></p>
+  
+    </div>
+    </div>
+  </div>
+  
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <br>
+      <legend class="border-bottom mb-4">Edit Profile</legend>
+      {{ u_form|crispy}}
+      
+      {{ p_form|crispy}}
+    </fieldset>
+    <br>
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit">Update</button>
+    </div>
+  </form>
+
+  
+  
+</div>
+
+</div>
+
+<style>
+
+  @media(min-width:991px){
+      #content{
+          
+          border-left: 1px solid #CED4DA !important;
+          border-right: 1px solid #CED4DA !important;
+      }
+  }
+  @media(max-width:991px){
+      #content{
+          margin-top: 10px !important;
+          margin-bottom: 100px !important;
+          padding: 0px !important;
+          border-left: 0px solid #CED4DA;
+          border-right: 0px solid #CED4DA;
+  
+      }
+  }
+</style>
+
+{% else %}
+<script>
+    window.location.href = '/login'
+</script>
+{% endif %}
+
+{% endblock content%}
+
+
+
+
+
+

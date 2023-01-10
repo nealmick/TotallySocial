@@ -1,0 +1,62 @@
+{% extends "sm/base.html"%}
+{% load crispy_forms_tags %}
+{% block content%}
+<div class='col-md-6 center' style="
+margin-right: auto;
+margin-left: auto;
+padding:50px;
+border: 1px solid #CED4DA;
+margin-top: 150px;
+border-radius: 0.375rem;
+">
+  
+    <center>
+        <p style="font-size: 56px;text-decoration: underline;margin-bottom: 2px">Login</p>
+        <br>
+
+    <form method="POST">
+      {% csrf_token %}
+      <fieldset class="form-group">
+        {{ form|crispy}}
+      </fieldset>
+
+      <div class="form-group">
+        <br>
+        <button id="login-button"class="btn btn-primary" style="" onclick="demoLogin();">Demo</button>
+        <button id="login-button"class="btn btn-outline-primary" style=""type="submit">Login</button>
+
+
+        <br>
+
+      </div>
+    </form>
+    <div class="boder-top pt-3">
+      <small class="text-muted">
+        <br>
+        Need An Account? <a class="ml-2" href="/profile/register/">Sign Up</a> 
+        <br>
+        <br>
+      </small>
+    </div>
+</center>
+</div>
+<style>
+  .r-navbar{
+    display:None;
+  }
+  #navbar{
+    display:None;
+  }
+</style>
+
+<script>
+    function demoLogin(){
+    document.getElementById('id_password').value='testdemopassword'
+    document.getElementById('id_username').value='Demo'
+    document.forms[0].submit()
+
+
+  } 
+
+</script>
+{% endblock content%}

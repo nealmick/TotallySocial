@@ -1,0 +1,33 @@
+{% extends "sm/base.html"%}
+{% load crispy_forms_tags %}
+{% block content%}
+
+<div class='col-md-6 center' style="
+margin-right: auto;
+margin-left: auto;
+border: 1px solid #CED4DA;
+padding:50px;
+margin-top: 150px;
+border-radius: 0.375rem;
+">
+  
+    <center>
+        <p style="font-size: 32px;text-decoration: underline;margin-bottom: 2px">You have been logged out.</p>
+        <br>
+  <div class="boder-top pt-3">
+    <small class="text-muted">
+      <a href="/profile/login/" class="btn btn-primary">Login</a>
+    </small>
+  </div>
+</body>
+</div
+</center>
+<style>
+  .r-navbar{
+    display:None;
+  }
+  #navbar{
+    display:None;
+  }
+</style>
+{% endblock content%}

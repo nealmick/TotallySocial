@@ -1,0 +1,47 @@
+{% extends "sm/base.html"%}
+{% load crispy_forms_tags %}
+{% block content%}
+<div class='col-md-6 center' style="
+margin-right: auto;
+margin-left: auto;
+padding:50px;
+border: 1px solid #CED4DA;
+margin-top: 150px;
+border-radius: 0.375rem;
+">
+<center></center>
+  
+        <p style="font-size: 56px;text-decoration: underline;margin-bottom: 2px">Register</p>
+
+    <form method="POST">
+      {% csrf_token %}
+      <fieldset class="form-group">
+        {{ form|crispy}}
+      </fieldset>
+      <div class="form-group">
+        <br>
+
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+
+      </div>
+    </form>
+    <div class="boder-top pt-3">
+      <small class="text-muted">
+        
+        Already Have An Account?<a class="ml-2" href="/profile/login/">Sign In</a>
+      </small>
+    </div>
+    </center>
+  </body>
+</div>
+<style>
+  .r-navbar{
+    display:None;
+  }
+  #navbar{
+    display:None;
+  }
+
+    input {min-width: 300px};
+</style>
+{% endblock content%}

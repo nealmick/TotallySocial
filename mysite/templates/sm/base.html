@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000"/>
+
+    <title>Totally</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="{% static 'sm/main.css'%}" rel="stylesheet">
+    {% include 'sm/react/css.html'%}
+  </head>
+  <body style="overflow-y: scroll;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <style>
+      @media(min-width:991px){
+    .r-navbar{
+        display:none;
+
+        }
+      }
+    </style>
+    <div class="r-navbar">
+      <div class="row">
+          <a class="nav-link col-3" href="/" role="tab"><i class="fas fa-list-ul"></i> Feed </a>
+          <a class="nav-link col-3" href="/conversations/" role="tab"><i class="far fa-envelope"></i> Message </a>
+          <a class="nav-link col-3" href="/profile/edit/" ><i class="far fa-user"></i> Profile </a>
+          <a class="nav-link col-3" href="/profile/logout/" ><i class="fas fa-sign-in-alt"></i> Logout </a>
+      </div>
+    </div>
+
+    <main role="main" class="container">
+
+
+    
+
+    <div class="row" style="margin-bottom:60px;">
+      <div id="navbar"class="offset-lg-9"style="">
+        <div id="navbarw" class="mx-2"style="position:fixed;margin-top:100px;max-width:305px;">
+          
+          <div class='chirp-pinned' style="margin-top:10px;margin-left:1px;" data-post-id="30" data-class-name=''>
+
+          </div>
+
+
+          <hr style="margin-top: 40px;margin-bottom: 30px;">
+          
+          <h2 style="margin-bottom: 10px">Discover</h2>
+          <div class="chirp-profile-badge-small" data-username="test_user"></div>
+          <br>
+          <div class="chirp-profile-badge-small" data-username="Test"></div>
+
+          <br>
+          <div class="chirp-profile-badge-small" data-username="neal"></div>
+          <br>
+
+          <div class="chirp-profile-badge-small" data-username="Test"></div>
+          <hr style="margin-top: 40px;margin-bottom: 40px;">
+
+          <p class="text-muted" style="font-size: 11px;">ⓒ 2023 Totally Social, Created by <a class="text-muted" href="https://nealmick.com">Neal Mick</a>. </p>
+
+
+        </div>
+
+    </div>
+    {% include 'sm/components/navbar.html'%}
+
+    {% block content %}
+
+    {% endblock content%}
+
+    </div>
+    
+
+    </div>
+
+
+  </main>
+
+  </div>
+
+  <script>
+
+$(window).scroll(function () {
+   if ($(window).scrollTop() >= ($(document).height() - $(window).height() - 10)) {
+      $("#load_more").trigger('click'); 
+   }
+});
+
+  </script>
+  {% include 'sm/react/base_embed.html'%}
+  {% include 'sm/react/js.html'%}
+  
+</body>
+</html>

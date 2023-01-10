@@ -1,0 +1,54 @@
+{% extends 'sm/base.html'%}
+
+{% block content %}
+
+
+{% if request.user.is_authenticated %}
+
+<div id="chirp-feed" class="offset-lg-3 col-lg-6"style="min-height:70vh;margin-top: 100px;padding-left: 25px!important;padding-right: 25px!important;">
+</div>
+
+<style>
+
+@media(min-width:991px){
+    #chirp-feed{
+        
+        border-left: 1px solid #CED4DA !important;
+        border-right: 1px solid #CED4DA !important;
+    }
+}
+@media(max-width:991px){
+    #chirp-feed{
+        margin-top: 10px !important;
+        margin-bottom: 100px !important;
+        padding: 0px !important;
+        border-left: 0px solid #CED4DA;
+        border-right: 0px solid #CED4DA;
+
+    }
+}
+@media(max-width:575px){
+    #spacer{
+        display:none;
+
+    }
+}
+
+    input[type="file"] {
+        
+    }
+</style>
+
+
+
+{% else %}
+<script>
+    window.location.href = '/profile/login/'
+</script>
+{% endif %}
+
+{% endblock content%}
+
+
+
+
