@@ -1,1 +1,1 @@
-This is backend django rest framework api
+backend django rest framework api
