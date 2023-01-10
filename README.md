@@ -8,7 +8,7 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 
 
-    File Structure:
+    Project Structure:
     mysite - Backend django rest framework api.
           1.  Mysite - Default django app.
           2.  Accounts - Authorization, Authentication, and identity.
