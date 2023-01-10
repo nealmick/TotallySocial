@@ -25,10 +25,10 @@ npm run build
 npm start
 
 ```
-
+[img][/img]
 <img src="https://i.imgur.com/QgOx4Bh.png" width="1000" height="500" />
 <img src="https://i.imgur.com/oK79FaY.png" width="1000" height="500" />
-<img src="https://i.imgur.com/QgOx4Bh.png" width="1000" height="500" />
+<img src="https://i.imgur.com/EEnvVzK.png" width="400" height="500" />
 <img src="https://i.imgur.com/QgOx4Bh.png" width="1000" height="500" />
 
 <img src="https://i.imgur.com/QgOx4Bh.png" width="1000" height="500" />
