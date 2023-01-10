@@ -9,6 +9,13 @@ The main content item is a post.  Each post can be up to 240 characters and may 
 
 # Live: https://totally.social
 
+#### Files:
+
+
+#### Django apps:
+1.  Mysite - Default django app.
+
+
 #### Install:
 
 ```bash
