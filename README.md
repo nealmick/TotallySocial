@@ -26,5 +26,5 @@ npm start
 
 ```
 
-<img src="https://i.imgur.com/QgOx4Bh.png" width="600" height="500" />
+<img src="https://i.imgur.com/QgOx4Bh.png" width="600" height="800" />
 
