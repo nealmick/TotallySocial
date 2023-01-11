@@ -1,5 +1,5 @@
 # Totally.Social
-#### This platform is meant to be used to share ideas and build connections.
+#### This platform was built to share ideas and create connections.
 
 The frontend is built with React, Bootstrap and a bit of CSS.  The backend server is a Django Rest Framework API.
 
