@@ -1,10 +1,7 @@
 # Totally.Social
-#### This platform was built to share ideas and create connections.
 
-The frontend is built with React, Bootstrap and a bit of CSS.  The backend server is a Django Rest Framework API.
 
-The main content item is a post.  Each post can be up to 240 characters and may include images.  Posts may also have comments, likes, and can be reposted.  The project includes users with authentication and profiles.  The main view is a feed of followed users posts.  Each user has a profile picture, status, follower count, and other information.  Users can also be messaged directly, and recent conversations are displayed in the message inbox view.
-
+Totally Social is a media platform built to create connections and spark new innovation. Developed with React for the front-end and Django for the back-end, the platform offers a dynamic feed of user-generated posts, enabling anyone in the world to easily engage with the latest trends. Overall, the project showcases my ability to design and develop a user-friendly and interactive social media platform that can drive engagement and foster connections.
 
 
 
