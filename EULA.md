@@ -27,9 +27,6 @@ Violations of these provisions may lead to immediate termination of this EULA, a
 TERMINATION
 Without prejudice to any other rights, Totally Social LLC may terminate this EULA if you fail to comply with the terms and conditions of this EULA. In such event, you must destroy all copies of the SOFTWARE PRODUCT and all of its component parts.
 
-COPYRIGHT
-All title and copyrights in and to the SOFTWARE PRODUCT (including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the SOFTWARE PRODUCT), and any copies of the SOFTWARE PRODUCT are owned by Totally Social LLC or its suppliers.
-
 You may not copy the printed materials accompanying the SOFTWARE PRODUCT. All rights not specifically granted under this EULA are reserved by Totally Social LLC.
 
 NO WARRANTIES
