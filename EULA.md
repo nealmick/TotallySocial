@@ -40,4 +40,8 @@ LIMITATION OF LIABILITY
 In no event shall Totally Social LLC or its suppliers be liable for any damages (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this Totally Social LLC product, even if Totally Social LLC has been advised of the possibility of such damages.
 Should you have any questions concerning this EULA, or if you desire to contact Totally Social LLC for any reason, please visit totally.social.
 
-By installing and using the SOFTWARE PRODUCT, you acknowledge that you have
+By installing and using the SOFTWARE PRODUCT, you acknowledge that you have read and understand this EULA and agree to be bound by its terms.
+
+Thank you for using Totally Social.
+
+Totally Social LLC.
