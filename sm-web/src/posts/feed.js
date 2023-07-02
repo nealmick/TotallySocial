@@ -1,4 +1,3 @@
-
 import React,{useEffect,useState} from 'react';
 import {apiPostFeed} from'./lookup'
 import{Post} from './detail'
