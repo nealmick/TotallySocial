@@ -11,6 +11,7 @@ export function ParentPost(props){
     return post.parent ? <Post isRepost reposter={props.reposter}hideActions className={'mx-5'} post={post.parent}/>:null
 }
 
+
 function CommentCreate(props){
     const textAreaRef = React.createRef()
     const {post} = props
