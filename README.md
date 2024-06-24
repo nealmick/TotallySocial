@@ -42,7 +42,5 @@ npm start
 #### Screenshots:
 <img src="https://i.imgur.com/ixp3YIN.png" width="1000" height="550" />
 <img src="https://i.imgur.com/lM1N3N1.png" width="1000" height="550" />
-<img src="https://i.imgur.com/QgOx4Bh.png" width="1000" height="500" />
-<img src="https://i.imgur.com/oK79FaY.png" width="1000" height="500" />
-<img src="https://i.imgur.com/aeW43Dt.png" width="1000" height="500" />
+
 
