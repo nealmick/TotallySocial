@@ -21,6 +21,7 @@ Totally Social is a media platform built to create connections and spark new inn
 
 
 # Live: https://totally.social
+# Homepage: https://totally.social/index
 
 #### Install:
 
